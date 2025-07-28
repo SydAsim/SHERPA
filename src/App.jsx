@@ -10,7 +10,6 @@ import ConversationalAI from '@/pages/ConversationalAI.jsx';
 import IntelligentResearch from '@/pages/IntelligentResearch.jsx';
 import Settings from '@/pages/Settings.jsx';
 import Login from '@/pages/Login.jsx';
-import GeminiChat from './components/chat';
 import { ThemeProvider } from '@/contexts/ThemeContext';
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
               <Route path="/conversational-ai" element={<ConversationalAI />} />
               <Route path="/intelligent-research" element={<IntelligentResearch />} />
               <Route path="/settings" element={<Settings />} />
-              <Route path="/chat" element={<GeminiChat/>}/>
             </Routes>
             <Toaster />
           </div>
