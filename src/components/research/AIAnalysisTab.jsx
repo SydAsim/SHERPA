@@ -4,6 +4,7 @@ import { TrendingUp, Globe, BookOpen } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { toast } from '@/components/ui/use-toast';
+import VulnerabilityReportUpload from './VulnerabilityReportUpload';
 
 const AIAnalysisTab = () => {
   const handleMapClick = () => {
@@ -15,6 +16,7 @@ const AIAnalysisTab = () => {
 
   return (
     <div className="space-y-6">
+      <VulnerabilityReportUpload />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
@@ -80,7 +82,7 @@ const AIAnalysisTab = () => {
             ].map((insight, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
+.                initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex items-start gap-3 p-4 rounded-lg bg-accent/30"
