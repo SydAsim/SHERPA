@@ -82,7 +82,7 @@ const AIAnalysisTab = () => {
             ].map((insight, index) => (
               <motion.div
                 key={index}
-.                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="flex items-start gap-3 p-4 rounded-lg bg-accent/30"
